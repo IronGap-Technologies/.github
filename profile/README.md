@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="IronGap // Vault-OS — Air-Gapped AI Infrastructure" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/header-narrow.svg">
+  <img src="assets/header.svg" alt="IronGap // Vault-OS — Air-Gapped AI Infrastructure" width="100%">
+</picture>
 
 <br>
 
@@ -34,7 +37,10 @@ private endpoint and no enterprise tier resolves it. The data still leaves.
 **Vault-OS is what you deploy when the answer has to be that it doesn't.**
 
 <div align="center">
-<img src="assets/airgap.svg" alt="Air-gap architecture — zero egress paths between the untrusted network and the Vault-OS enclave" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/airgap-narrow.svg">
+  <img src="assets/airgap.svg" alt="Air-gap architecture — zero egress paths between the untrusted network and the Vault-OS enclave" width="100%">
+</picture>
 </div>
 
 ---
@@ -45,7 +51,10 @@ Security is usually a matter of defending routes. Remove the routes and most of 
 becomes unnecessary — along with most of the ways it can be misconfigured.
 
 <div align="center">
-<img src="assets/threat.svg" alt="Attack surface comparison — cloud AI stack versus Vault-OS" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/threat-narrow.svg">
+  <img src="assets/threat.svg" alt="Attack surface comparison — cloud AI stack versus Vault-OS" width="100%">
+</picture>
 </div>
 
 ---
@@ -61,13 +70,19 @@ enclave stays sealed — the disk holds ciphertext and nothing else. Failure is 
 UI over readable data; it is data that cannot be read.
 
 <div align="center">
-<img src="assets/bootchain.svg" alt="Fail-deadly boot chain — TPM measurement, attestation, unseal or halt" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/bootchain-narrow.svg">
+  <img src="assets/bootchain.svg" alt="Fail-deadly boot chain — TPM measurement, attestation, unseal or halt" width="100%">
+</picture>
 </div>
 
 ### Retrieval is grounded or refused
 
 <div align="center">
-<img src="assets/pipeline.svg" alt="Retrieval pipeline — ingest, embed, index, retrieve, adversarial critic, grounded answer" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/pipeline-narrow.svg">
+  <img src="assets/pipeline.svg" alt="Retrieval pipeline — ingest, embed, index, retrieve, adversarial critic, grounded answer" width="100%">
+</picture>
 </div>
 
 Hybrid RAG on natively bundled pgvector with HNSW indexing over 768-dimensional embeddings,
@@ -79,7 +94,10 @@ refused rather than produced.
 ### Every write is on the record
 
 <div align="center">
-<img src="assets/ledger.svg" alt="Tamper-evident audit ledger — SHA-256 chained, RSA signed" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/ledger-narrow.svg">
+  <img src="assets/ledger.svg" alt="Tamper-evident audit ledger — SHA-256 chained, RSA signed" width="100%">
+</picture>
 </div>
 
 SHA-256 hash-chained and RSA-signed. Altering a historical entry invalidates every entry
