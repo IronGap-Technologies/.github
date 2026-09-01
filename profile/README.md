@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile/assets/header.svg" alt="IronGap // Vault-OS — Air-Gapped AI Infrastructure" width="100%">
+<img src="assets/header.svg" alt="IronGap // Vault-OS — Air-Gapped AI Infrastructure" width="100%">
 
 <br>
 
@@ -30,7 +30,7 @@ can be attacked, and the only guarantee that survives a real adversary is one en
 architecture rather than policy.
 
 <div align="center">
-<img src="profile/assets/airgap.svg" alt="Air-gap architecture — zero egress paths between the untrusted network and the Vault-OS enclave" width="100%">
+<img src="assets/airgap.svg" alt="Air-gap architecture — zero egress paths between the untrusted network and the Vault-OS enclave" width="100%">
 </div>
 
 ---
@@ -89,7 +89,7 @@ for cryptographic self-termination.
 </table>
 
 <div align="center">
-<img src="profile/assets/ledger.svg" alt="Tamper-evident audit ledger — SHA-256 chained, RSA signed" width="100%">
+<img src="assets/ledger.svg" alt="Tamper-evident audit ledger — SHA-256 chained, RSA signed" width="100%">
 </div>
 
 ---
