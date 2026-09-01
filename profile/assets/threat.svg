@@ -1,62 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-label="Attack surface comparison: cloud AI stack versus Vault-OS">
-<defs>
-  <pattern id="gh2" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.04" stroke-width="1"/></pattern>
-  <clipPath id="ch2"><rect width="1000" height="380" rx="14"/></clipPath>
-  <filter id="glh" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<g clip-path="url(#ch2)">
-<rect width="1000" height="380" fill="#07070A"/><rect width="1000" height="380" fill="url(#gh2)"/>
-<text x="34" y="34" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#FFC93C" letter-spacing="2.6">ATTACK SURFACE &#183; WHAT AN ADVERSARY CAN REACH</text>
-
-<line x1="500" y1="58" x2="500" y2="304" stroke="#FFC93C" stroke-opacity="0.12"/>
-
-<g font-family="ui-monospace,Menlo,monospace">
-  <text x="34" y="82" font-size="11.5" fill="#F85149" letter-spacing="2">TYPICAL CLOUD AI STACK</text>
-  <text x="440" y="94" font-size="42" font-weight="700" fill="#F85149" text-anchor="end" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.5s" fill="freeze"/>8</text>
-
-  <g font-size="11.5" fill="#8A6F72">
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="104" width="6" height="14" fill="#F85149"/><text x="52" y="116">network egress path</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.36s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="130" width="6" height="14" fill="#F85149"/><text x="52" y="142">vendor API credentials</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.52s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="156" width="6" height="14" fill="#F85149"/><text x="52" y="168">third-party subprocessors</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.68s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="182" width="6" height="14" fill="#F85149"/><text x="52" y="194">container runtime escape</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.84s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="208" width="6" height="14" fill="#F85149"/><text x="52" y="220">orchestrator RBAC misconfiguration</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.00s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="234" width="6" height="14" fill="#F85149"/><text x="52" y="246">provider-side prompt retention</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.16s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="260" width="6" height="14" fill="#F85149"/><text x="52" y="272">cross-border data transfer</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.32s" dur="0.4s" fill="freeze"/>
-      <rect x="34" y="286" width="6" height="14" fill="#F85149"/><text x="52" y="298">shared-tenancy side channels</text></g>
-  </g>
-
-  <text x="534" y="82" font-size="11.5" fill="#3FB950" letter-spacing="2">VAULT-OS</text>
-  <text x="946" y="94" font-size="42" font-weight="700" fill="#3FB950" text-anchor="end" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.5s" fill="freeze"/>2</text>
-
-  <g font-size="11.5" fill="#8B929E">
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.55s" dur="0.4s" fill="freeze"/>
-      <rect x="534" y="104" width="6" height="14" fill="#3FB950"/><text x="552" y="116">physical access to the machine</text></g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.71s" dur="0.4s" fill="freeze"/>
-      <rect x="534" y="130" width="6" height="14" fill="#3FB950"/><text x="552" y="142">a cleared insider at the console</text></g>
-  </g>
-
-  <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.3s" dur="0.6s" fill="freeze"/>
-    <text x="552" y="184" font-size="10.5" fill="#5F6672">Both are physical, both are auditable, and both are</text>
-    <text x="552" y="202" font-size="10.5" fill="#5F6672">already inside your existing security perimeter.</text>
-    <text x="552" y="234" font-size="10.5" fill="#5F6672">The six surfaces that disappear are the six an</text>
-    <text x="552" y="252" font-size="10.5" fill="#5F6672">attacker can reach without ever entering your building.</text>
-  </g>
-</g>
-
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.6s" dur="0.7s" fill="freeze"/>
-  <line x1="34" y1="326" x2="966" y2="326" stroke="#FFC93C" stroke-opacity="0.10"/>
-  <text x="34" y="352" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#FFC93C">There is no exfiltration through a path that was never built.</text>
-</g>
-<rect x="0.5" y="0.5" width="999" height="379" rx="14" fill="none" stroke="#FFC93C" stroke-opacity="0.14"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="820" height="340" role="img" aria-label="Attack surface: cloud AI stack versus Vault-OS">
+<defs><pattern id="gth" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.045"/></pattern><linearGradient id="swth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><linearGradient id="swhth" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.18"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><filter id="glth" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><clipPath id="cth"><rect width="820" height="340" rx="12"/></clipPath></defs>
+<g clip-path="url(#cth)"><rect width="820" height="340" fill="#07070A"/><rect width="820" height="340" fill="url(#gth)"/>
+<text x="28" y="28" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#FFC93C" letter-spacing="2.2">ATTACK SURFACE · WHAT AN ADVERSARY CAN REACH</text>
+<line x1="410.0" y1="52" x2="410.0" y2="276" stroke="#FFC93C" stroke-opacity="0.12"/>
+<text x="28.0" y="62.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#F85149" letter-spacing="1.6">TYPICAL CLOUD AI STACK</text>
+<text x="386.0" y="74" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="38" font-weight="700" fill="#F85149" text-anchor="end" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.70s" dur="0.5s" fill="freeze"/>8</text>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.45s" fill="freeze"/><rect x="28" y="85" width="5" height="14" fill="#F85149"/><text x="44.0" y="96.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">network egress path</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.26s" dur="0.45s" fill="freeze"/><rect x="28" y="111" width="5" height="14" fill="#F85149"/><text x="44.0" y="122.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">vendor API credentials</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.37s" dur="0.45s" fill="freeze"/><rect x="28" y="137" width="5" height="14" fill="#F85149"/><text x="44.0" y="148.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">third-party subprocessors</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.48s" dur="0.45s" fill="freeze"/><rect x="28" y="163" width="5" height="14" fill="#F85149"/><text x="44.0" y="174.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">container runtime escape</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.59s" dur="0.45s" fill="freeze"/><rect x="28" y="189" width="5" height="14" fill="#F85149"/><text x="44.0" y="200.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">orchestrator RBAC</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.70s" dur="0.45s" fill="freeze"/><rect x="28" y="215" width="5" height="14" fill="#F85149"/><text x="44.0" y="226.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">provider prompt retention</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.81s" dur="0.45s" fill="freeze"/><rect x="28" y="241" width="5" height="14" fill="#F85149"/><text x="44.0" y="252.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">cross-border transfer</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.92s" dur="0.45s" fill="freeze"/><rect x="28" y="267" width="5" height="14" fill="#F85149"/><text x="44.0" y="278.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8A6F72">shared-tenancy channels</text></g>
+<text x="436.0" y="62.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#3FB950" letter-spacing="1.6">VAULT-OS</text>
+<text x="792" y="74" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="38" font-weight="700" fill="#3FB950" text-anchor="end" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.90s" dur="0.5s" fill="freeze"/>2</text>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.30s" dur="0.45s" fill="freeze"/><rect x="436.0" y="85" width="5" height="14" fill="#3FB950"/><text x="452.0" y="96.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8B929E">physical access to the machine</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.46s" dur="0.45s" fill="freeze"/><rect x="436.0" y="111" width="5" height="14" fill="#3FB950"/><text x="452.0" y="122.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#8B929E">a cleared insider at the console</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.20s" dur="0.6s" fill="freeze"/><text x="452.0" y="168.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">Both are physical, both are auditable, and</text><text x="452.0" y="186.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">both already sit inside your existing</text><text x="452.0" y="204.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">security perimeter.</text><text x="452.0" y="234.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">The six that disappear are the six an</text><text x="452.0" y="252.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">attacker can reach without ever entering</text><text x="452.0" y="270.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">your building.</text></g>
+<line x1="28" y1="284" x2="792" y2="284" stroke="#FFC93C" stroke-opacity="0.1"/>
+<text x="28.0" y="312.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#FFC93C">There is no exfiltration through a path that was never built.</text>
+<rect x="0" y="0" width="120" height="340" fill="url(#swhth)" pointer-events="none"><animate attributeName="x" values="-120;820" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="0.5" y="0.5" width="819" height="339" rx="12" fill="none" stroke="#FFC93C" stroke-opacity="0.16"/></g></svg>
