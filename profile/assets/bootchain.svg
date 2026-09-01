@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-label="Fail-deadly boot chain: TPM measurement, license verification, enclave unlock, or halt">
+<defs>
+  <pattern id="gb" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.04" stroke-width="1"/></pattern>
+  <clipPath id="cb"><rect width="1000" height="330" rx="14"/></clipPath>
+  <filter id="glb" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#3FB950" fill-opacity="0.55"/></marker>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#F85149" fill-opacity="0.7"/></marker>
+</defs>
+<g clip-path="url(#cb)">
+<rect width="1000" height="330" fill="#07070A"/><rect width="1000" height="330" fill="url(#gb)"/>
+<text x="34" y="34" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#FFC93C" letter-spacing="2.6">FAIL-DEADLY BOOT CHAIN</text>
+
+<g font-family="ui-monospace,Menlo,monospace">
+  <rect x="34" y="102" width="150" height="62" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.35"/>
+  <text x="50" y="128" font-size="12.5" fill="#E4E6EB">POWER ON</text>
+  <text x="50" y="147" font-size="10" fill="#5F6672">cold start</text>
+
+  <rect x="222" y="102" width="150" height="62" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.35"/>
+  <text x="238" y="128" font-size="12.5" fill="#E4E6EB">PCR MEASURE</text>
+  <text x="238" y="147" font-size="10" fill="#5F6672">TPM 2.0 registers</text>
+
+  <rect x="410" y="102" width="150" height="62" rx="7" fill="#0E1116" stroke="#FFC93C" stroke-opacity="0.5"/>
+  <text x="426" y="128" font-size="12.5" fill="#FFC93C">ATTEST</text>
+  <text x="426" y="147" font-size="10" fill="#5F6672">license vs silicon</text>
+
+  <rect x="598" y="102" width="150" height="62" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.35"/>
+  <text x="614" y="128" font-size="12.5" fill="#E4E6EB">UNSEAL</text>
+  <text x="614" y="147" font-size="10" fill="#5F6672">enclave mounts</text>
+
+  <rect x="786" y="102" width="180" height="62" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.55"/>
+  <text x="802" y="128" font-size="12.5" fill="#3FB950">OPERATIONAL</text>
+  <text x="802" y="147" font-size="10" fill="#5F6672">no drive letter assigned</text>
+
+  <rect x="410" y="242" width="338" height="58" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.55"/>
+  <text x="428" y="266" font-size="12.5" fill="#F85149">HALT &#183; KEYS NEVER DERIVED</text>
+  <text x="428" y="285" font-size="10" fill="#8A6F72">measurement mismatch &#8594; enclave stays sealed, ciphertext only</text>
+</g>
+
+<g stroke-width="1.6" fill="none">
+  <line x1="184" y1="133" x2="216" y2="133" stroke="#3FB950" stroke-opacity="0.5" marker-end="url(#ar)"/>
+  <line x1="372" y1="133" x2="404" y2="133" stroke="#3FB950" stroke-opacity="0.5" marker-end="url(#ar)"/>
+  <line x1="560" y1="133" x2="592" y2="133" stroke="#3FB950" stroke-opacity="0.5" marker-end="url(#ar)"/>
+  <line x1="748" y1="133" x2="780" y2="133" stroke="#3FB950" stroke-opacity="0.5" marker-end="url(#ar)"/>
+  <path d="M485 164 V242" stroke="#F85149" stroke-opacity="0.5" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+</g>
+<text x="497" y="208" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#8A6F72">on mismatch</text>
+<text x="600" y="92" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#5F6672">on match</text>
+
+<g fill="#3FB950">
+  <circle r="4" filter="url(#glb)">
+    <animate attributeName="cx" values="109;109;297;297;485;485;673;673;876;876" keyTimes="0;0.06;0.16;0.26;0.36;0.50;0.60;0.70;0.80;1" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="133" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;1;1;1;1;1;1;0" keyTimes="0;0.04;0.16;0.26;0.36;0.50;0.60;0.70;0.90;1" dur="9s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<g>
+  <circle cx="485" cy="133" r="3" fill="none" stroke="#FFC93C" stroke-width="2">
+    <animate attributeName="r" values="3;24" dur="9s" keyTimes="0;0.5" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.36;0.42;0.5" dur="9s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.62;0.68;0.86;0.92" dur="9s" repeatCount="indefinite"/>
+  <circle cx="485" cy="271" r="5" fill="#F85149" filter="url(#glb)"/>
+</g>
+
+<rect x="0.5" y="0.5" width="999" height="329" rx="14" fill="none" stroke="#FFC93C" stroke-opacity="0.14"/>
+</g>
+</svg>
