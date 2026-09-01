@@ -1,85 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="1000" height="230" role="img" aria-label="SHA-256 hash-chained audit ledger detecting tampering">
-<defs>
-  <pattern id="g3" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.045" stroke-width="1"/></pattern>
-  <clipPath id="c3"><rect width="1000" height="230" rx="14"/></clipPath>
-  <filter id="gl3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<g clip-path="url(#c3)">
-<rect width="1000" height="230" fill="#07070A"/><rect width="1000" height="230" fill="url(#g3)"/>
-<text x="34" y="34" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#FFC93C" letter-spacing="2.6">TAMPER-EVIDENT AUDIT LEDGER &#183; SHA-256 CHAINED &#183; RSA SIGNED</text>
-
-<g stroke="#3FB950" stroke-width="1.6" fill="none">
-  <path d="M190 110 H210"><animate attributeName="stroke" values="#3FB950;#3FB950;#3FB950;#3FB950" dur="13s" repeatCount="indefinite"/></path>
-  <path d="M340 110 H360"/>
-  <path d="M490 110 H510"><animate attributeName="stroke" values="#3FB950;#3FB950;#F85149;#F85149;#3FB950" keyTimes="0;0.50;0.58;0.90;1" dur="13s" repeatCount="indefinite"/></path>
-  <path d="M640 110 H660"><animate attributeName="stroke" values="#3FB950;#3FB950;#F85149;#F85149;#3FB950" keyTimes="0;0.56;0.64;0.90;1" dur="13s" repeatCount="indefinite"/></path>
-  <path d="M790 110 H810"><animate attributeName="stroke" values="#3FB950;#3FB950;#F85149;#F85149;#3FB950" keyTimes="0;0.62;0.70;0.90;1" dur="13s" repeatCount="indefinite"/></path>
-</g>
-
-<g font-family="ui-monospace,Menlo,monospace">
-  <g opacity="0"><animate attributeName="opacity" values="0;1;1;1" keyTimes="0;0.06;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="60" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="74" y="100" font-size="11" fill="#5F6672">BLOCK 0x01</text>
-    <text x="74" y="122" font-size="12" fill="#3FB950">a3f9c1&#8230;</text>
-    <circle cx="174" cy="94" r="3.2" fill="#3FB950"/></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;0.10;0.16;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="210" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="224" y="100" font-size="11" fill="#5F6672">BLOCK 0x02</text>
-    <text x="224" y="122" font-size="12" fill="#3FB950">7d2e08&#8230;</text>
-    <circle cx="324" cy="94" r="3.2" fill="#3FB950"/></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;0.20;0.26;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="360" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="374" y="100" font-size="11" fill="#5F6672">BLOCK 0x03</text>
-    <text x="374" y="122" font-size="12" fill="#3FB950">b81af4&#8230;</text>
-    <circle cx="474" cy="94" r="3.2" fill="#3FB950"/></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.50;0.58;0.90;0.93" dur="13s" repeatCount="indefinite"/>
-    <rect x="360" y="76" width="130" height="68" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-width="1.8" filter="url(#gl3)"/>
-    <text x="374" y="100" font-size="11" fill="#F85149">BLOCK 0x03</text>
-    <text x="374" y="122" font-size="12" fill="#F85149">ff01d9&#8230;</text>
-    <text x="374" y="138" font-size="8.5" fill="#8A6F72">HASH MISMATCH</text>
-    <circle cx="474" cy="94" r="3.2" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/></circle></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;0.30;0.36;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="510" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="524" y="100" font-size="11" fill="#5F6672">BLOCK 0x04</text>
-    <text x="524" y="122" font-size="12" fill="#3FB950">2c6b7e&#8230;</text>
-    <circle cx="624" cy="94" r="3.2" fill="#3FB950"/></g>
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.64;0.90;0.93" dur="13s" repeatCount="indefinite"/>
-    <rect x="510" y="76" width="130" height="68" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.75"/>
-    <text x="524" y="100" font-size="11" fill="#F85149">BLOCK 0x04</text>
-    <text x="524" y="122" font-size="12" fill="#F85149">INVALID</text></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;0.38;0.44;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="660" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="674" y="100" font-size="11" fill="#5F6672">BLOCK 0x05</text>
-    <text x="674" y="122" font-size="12" fill="#3FB950">9e40aa&#8230;</text>
-    <circle cx="774" cy="94" r="3.2" fill="#3FB950"/></g>
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.62;0.70;0.90;0.93" dur="13s" repeatCount="indefinite"/>
-    <rect x="660" y="76" width="130" height="68" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.75"/>
-    <text x="674" y="100" font-size="11" fill="#F85149">BLOCK 0x05</text>
-    <text x="674" y="122" font-size="12" fill="#F85149">INVALID</text></g>
-
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;0.44;0.50;0.92;1" dur="13s" repeatCount="indefinite"/>
-    <rect x="810" y="76" width="130" height="68" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/>
-    <text x="824" y="100" font-size="11" fill="#5F6672">BLOCK 0x06</text>
-    <text x="824" y="122" font-size="12" fill="#3FB950">51c7d2&#8230;</text>
-    <circle cx="924" cy="94" r="3.2" fill="#3FB950"/></g>
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.68;0.76;0.90;0.93" dur="13s" repeatCount="indefinite"/>
-    <rect x="810" y="76" width="130" height="68" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.75"/>
-    <text x="824" y="100" font-size="11" fill="#F85149">BLOCK 0x06</text>
-    <text x="824" y="122" font-size="12" fill="#F85149">INVALID</text></g>
-</g>
-
-<g font-family="ui-monospace,Menlo,monospace" font-size="12.5" letter-spacing="1.6">
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.44;0.50;0.55;0.58" dur="13s" repeatCount="indefinite"/>
-    <circle cx="66" cy="186" r="3.6" fill="#3FB950"/><text x="80" y="190" fill="#3FB950">LEDGER INTACT &#183; 6 BLOCKS VERIFIED &#183; SIGNATURE VALID</text></g>
-  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.58;0.66;0.90;0.93" dur="13s" repeatCount="indefinite"/>
-    <circle cx="66" cy="186" r="3.6" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/></circle>
-    <text x="80" y="190" fill="#F85149">TAMPER DETECTED AT 0x03 &#183; CHAIN BROKEN &#183; 3 BLOCKS ORPHANED</text></g>
-</g>
-<rect x="0.5" y="0.5" width="999" height="229" rx="14" fill="none" stroke="#FFC93C" stroke-opacity="0.14"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 190" width="820" height="190" role="img" aria-label="Tamper-evident audit ledger, SHA-256 chained and RSA signed">
+<defs><pattern id="glg" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.045"/></pattern><linearGradient id="swlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><linearGradient id="swhlg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.18"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><filter id="gllg" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><clipPath id="clg"><rect width="820" height="190" rx="12"/></clipPath></defs>
+<g clip-path="url(#clg)"><rect width="820" height="190" fill="#07070A"/><rect width="820" height="190" fill="url(#glg)"/>
+<text x="28" y="28" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#FFC93C" letter-spacing="2.2">TAMPER-EVIDENT AUDIT LEDGER · SHA-256 CHAINED · RSA SIGNED</text>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.45s" fill="freeze"/><rect x="28.0" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="40.0" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x01</text><text x="40.0" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">a3f9c1…</text><circle cx="130.66666666666669" cy="76" r="3.4" fill="#3FB950"/></g>
+<path d="M143.66666666666669 89.0 h12" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.31s" dur="0.45s" fill="freeze"/><rect x="157.7" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="169.7" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x02</text><text x="169.7" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">7d2e08…</text><circle cx="260.33333333333337" cy="76" r="3.4" fill="#3FB950"/></g>
+<path d="M273.33333333333337 89.0 h12" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.47s" dur="0.45s" fill="freeze"/><rect x="287.3" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="299.3" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x03</text><text x="299.3" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">b81af4…</text><circle cx="390.00000000000006" cy="76" r="3.4" fill="#3FB950"/></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.56;0.90;0.94" dur="13.0s" repeatCount="indefinite"/><rect x="287.3" y="58.0" width="115.7" height="62.0" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.8"/><text x="299.3" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#F85149">BLOCK 0x03</text><text x="299.3" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#F85149">ff01d9…</text><circle cx="390.00000000000006" cy="76" r="3.4" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></circle></g>
+<path d="M403.00000000000006 89.0 h12" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.63s" dur="0.45s" fill="freeze"/><rect x="417.0" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="429.0" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x04</text><text x="429.0" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">2c6b7e…</text><circle cx="519.6666666666667" cy="76" r="3.4" fill="#3FB950"/></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.6100000000000001;0.90;0.94" dur="13.0s" repeatCount="indefinite"/><rect x="417.0" y="58.0" width="115.7" height="62.0" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.8"/><text x="429.0" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#F85149">BLOCK 0x04</text><text x="429.0" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#F85149">INVALID</text><circle cx="519.6666666666667" cy="76" r="3.4" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></circle></g>
+<path d="M532.6666666666667 89.0 h12" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.79s" dur="0.45s" fill="freeze"/><rect x="546.7" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="558.7" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x05</text><text x="558.7" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">9e40aa…</text><circle cx="649.3333333333334" cy="76" r="3.4" fill="#3FB950"/></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6;0.6599999999999999;0.90;0.94" dur="13.0s" repeatCount="indefinite"/><rect x="546.7" y="58.0" width="115.7" height="62.0" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.8"/><text x="558.7" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#F85149">BLOCK 0x05</text><text x="558.7" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#F85149">INVALID</text><circle cx="649.3333333333334" cy="76" r="3.4" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></circle></g>
+<path d="M662.3333333333335 89.0 h12" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.95s" dur="0.45s" fill="freeze"/><rect x="676.3" y="58.0" width="115.7" height="62.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.45"/><text x="688.3" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">BLOCK 0x06</text><text x="688.3" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">51c7d2…</text><circle cx="779.0000000000001" cy="76" r="3.4" fill="#3FB950"/></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.65;0.71;0.90;0.94" dur="13.0s" repeatCount="indefinite"/><rect x="676.3" y="58.0" width="115.7" height="62.0" rx="7" fill="#1A0E0E" stroke="#F85149" stroke-opacity="0.8"/><text x="688.3" y="80.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#F85149">BLOCK 0x06</text><text x="688.3" y="100.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#F85149">INVALID</text><circle cx="779.0000000000001" cy="76" r="3.4" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></circle></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.48;0.52;0.56" dur="13.0s" repeatCount="indefinite"/><circle cx="33" cy="152" r="3.8" fill="#3FB950"/><text x="46.0" y="157.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#3FB950">LEDGER INTACT · 6 BLOCKS VERIFIED · SIGNATURE VALID</text></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.62;0.90;0.94" dur="13.0s" repeatCount="indefinite"/><circle cx="33" cy="152" r="3.8" fill="#F85149"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></circle><text x="46.0" y="157.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#F85149">TAMPER DETECTED AT 0x03 · CHAIN BROKEN · 3 BLOCKS ORPHANED</text></g>
+<rect x="0" y="0" width="120" height="190" fill="url(#swhlg)" pointer-events="none"><animate attributeName="x" values="-120;820" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="0.5" y="0.5" width="819" height="189" rx="12" fill="none" stroke="#FFC93C" stroke-opacity="0.16"/></g></svg>
