@@ -1,75 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="1000" height="310" role="img" aria-label="Retrieval pipeline: ingest, embed, index, retrieve, adversarial critic, grounded answer">
-<defs>
-  <pattern id="gp" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.04" stroke-width="1"/></pattern>
-  <clipPath id="cp"><rect width="1000" height="310" rx="14"/></clipPath>
-  <filter id="glp" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <marker id="ap" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#3FB950" fill-opacity="0.5"/></marker>
-  <marker id="apr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#FFC93C" fill-opacity="0.7"/></marker>
-</defs>
-<g clip-path="url(#cp)">
-<rect width="1000" height="310" fill="#07070A"/><rect width="1000" height="310" fill="url(#gp)"/>
-<text x="34" y="34" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#FFC93C" letter-spacing="2.6">RETRIEVAL PIPELINE &#183; NOTHING LEAVES THE ENCLAVE</text>
-
-<g font-family="ui-monospace,Menlo,monospace">
-  <rect x="30" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.32"/>
-  <text x="46" y="112" font-size="12" fill="#E4E6EB">INGEST</text>
-  <text x="46" y="131" font-size="9.5" fill="#5F6672">documents, audio,</text>
-  <text x="46" y="144" font-size="9.5" fill="#5F6672">images, transcripts</text>
-
-  <rect x="190" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.32"/>
-  <text x="206" y="112" font-size="12" fill="#E4E6EB">EMBED</text>
-  <text x="206" y="131" font-size="9.5" fill="#5F6672">local model,</text>
-  <text x="206" y="144" font-size="9.5" fill="#5F6672">768 dimensions</text>
-
-  <rect x="350" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.32"/>
-  <text x="366" y="112" font-size="12" fill="#E4E6EB">INDEX</text>
-  <text x="366" y="131" font-size="9.5" fill="#5F6672">pgvector HNSW +</text>
-  <text x="366" y="144" font-size="9.5" fill="#5F6672">entity graph</text>
-
-  <rect x="510" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.32"/>
-  <text x="526" y="112" font-size="12" fill="#E4E6EB">RETRIEVE</text>
-  <text x="526" y="131" font-size="9.5" fill="#5F6672">hybrid rank, +0.3</text>
-  <text x="526" y="144" font-size="9.5" fill="#5F6672">boost on entities</text>
-
-  <rect x="670" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#FFC93C" stroke-opacity="0.5"/>
-  <text x="686" y="112" font-size="12" fill="#FFC93C">CRITIC</text>
-  <text x="686" y="131" font-size="9.5" fill="#5F6672">adversarial</text>
-  <text x="686" y="144" font-size="9.5" fill="#5F6672">second pass</text>
-
-  <rect x="830" y="86" width="140" height="66" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.55"/>
-  <text x="846" y="112" font-size="12" fill="#3FB950">GROUNDED</text>
-  <text x="846" y="131" font-size="9.5" fill="#5F6672">cited to retrieved</text>
-  <text x="846" y="144" font-size="9.5" fill="#5F6672">source, or refused</text>
-</g>
-
-<g stroke-width="1.5" fill="none" stroke="#3FB950" stroke-opacity="0.45">
-  <line x1="170" y1="119" x2="184" y2="119" marker-end="url(#ap)"/>
-  <line x1="330" y1="119" x2="344" y2="119" marker-end="url(#ap)"/>
-  <line x1="490" y1="119" x2="504" y2="119" marker-end="url(#ap)"/>
-  <line x1="650" y1="119" x2="664" y2="119" marker-end="url(#ap)"/>
-  <line x1="810" y1="119" x2="824" y2="119" marker-end="url(#ap)"/>
-</g>
-
-<path d="M740 152 V196 H580 V152" fill="none" stroke="#FFC93C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#apr)"/>
-<text x="660" y="212" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#8A7A4A" text-anchor="middle">rejected &#8594; retrieve again</text>
-
-<circle r="4.5" fill="#3FB950" filter="url(#glp)">
-  <animate attributeName="cx" values="100;100;260;420;580;740;740;580;740;900;900" keyTimes="0;0.04;0.14;0.24;0.34;0.44;0.52;0.62;0.72;0.84;1" dur="8.5s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="119;119;119;119;119;119;119;119;119;119;119" keyTimes="0;0.04;0.14;0.24;0.34;0.44;0.52;0.62;0.72;0.84;1" dur="8.5s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0;1;1;1;1;1;1;1;1;1;0" keyTimes="0;0.04;0.14;0.24;0.34;0.44;0.52;0.62;0.72;0.90;1" dur="8.5s" repeatCount="indefinite"/>
-  <animate attributeName="fill" values="#3FB950;#3FB950;#FFC93C;#FFC93C;#3FB950;#3FB950" keyTimes="0;0.44;0.52;0.68;0.72;1" dur="8.5s" repeatCount="indefinite"/>
-</circle>
-
-<circle cx="740" cy="119" r="3" fill="none" stroke="#FFC93C" stroke-width="2">
-  <animate attributeName="r" values="3;22" dur="8.5s" keyTimes="0;0.56" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0;0;0.8;0" keyTimes="0;0.44;0.50;0.56" dur="8.5s" repeatCount="indefinite"/>
-</circle>
-
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.7s" fill="freeze"/>
-  <line x1="34" y1="248" x2="966" y2="248" stroke="#FFC93C" stroke-opacity="0.10"/>
-  <text x="34" y="274" font-family="ui-monospace,Menlo,monospace" font-size="11.5" fill="#5F6672">Every stage runs inside the enclave on bundled open weights. No embedding, no chunk and no prompt is transmitted to a model provider,</text>
-  <text x="34" y="292" font-family="ui-monospace,Menlo,monospace" font-size="11.5" fill="#5F6672">because there is no provider and no route to one. An answer the critic cannot ground in retrieved text is refused rather than generated.</text>
-</g>
-<rect x="0.5" y="0.5" width="999" height="309" rx="14" fill="none" stroke="#FFC93C" stroke-opacity="0.14"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" width="820" height="250" role="img" aria-label="Retrieval pipeline: ingest, embed, index, retrieve, critic, grounded answer">
+<defs><pattern id="gpl" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#FFC93C" stroke-opacity="0.045"/></pattern><linearGradient id="swpl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><linearGradient id="swhpl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFC93C" stop-opacity="0"/><stop offset="0.5" stop-color="#FFC93C" stop-opacity="0.18"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></linearGradient><filter id="glpl" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><clipPath id="cpl"><rect width="820" height="250" rx="12"/></clipPath></defs>
+<g clip-path="url(#cpl)"><rect width="820" height="250" fill="#07070A"/><rect width="820" height="250" fill="url(#gpl)"/>
+<text x="28" y="28" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#FFC93C" letter-spacing="2.2">RETRIEVAL PIPELINE · NOTHING LEAVES THE ENCLAVE</text>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.45s" fill="freeze"/><rect x="28.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.34"/><text x="39.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#E4E6EB">INGEST</text><text x="39.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">documents,</text><text x="39.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">audio, images</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.29s" dur="0.45s" fill="freeze"/><rect x="157.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.34"/><text x="168.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#E4E6EB">EMBED</text><text x="168.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">local model,</text><text x="168.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">768 dims</text></g>
+<path d="M147.0 99.0 L155.0 99.0" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6" fill="none"/><path d="M155.0 95.0 l6 4 -6 4z" fill="#3FB950" fill-opacity="0.70"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.43s" dur="0.45s" fill="freeze"/><rect x="286.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.34"/><text x="297.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#E4E6EB">INDEX</text><text x="297.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">pgvector HNSW</text><text x="297.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">+ graph</text></g>
+<path d="M276.0 99.0 L284.0 99.0" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6" fill="none"/><path d="M284.0 95.0 l6 4 -6 4z" fill="#3FB950" fill-opacity="0.70"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.57s" dur="0.45s" fill="freeze"/><rect x="415.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.34"/><text x="426.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#E4E6EB">RETRIEVE</text><text x="426.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">hybrid rank,</text><text x="426.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">entity boost</text></g>
+<path d="M405.0 99.0 L413.0 99.0" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6" fill="none"/><path d="M413.0 95.0 l6 4 -6 4z" fill="#3FB950" fill-opacity="0.70"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.71s" dur="0.45s" fill="freeze"/><rect x="544.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#FFC93C" stroke-opacity="0.34"/><text x="555.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#FFC93C">CRITIC</text><text x="555.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">adversarial</text><text x="555.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">second pass</text></g>
+<path d="M534.0 99.0 L542.0 99.0" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6" fill="none"/><path d="M542.0 95.0 l6 4 -6 4z" fill="#3FB950" fill-opacity="0.70"/>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.85s" dur="0.45s" fill="freeze"/><rect x="673.0" y="62.0" width="119.0" height="74.0" rx="7" fill="#0E1116" stroke="#3FB950" stroke-opacity="0.34"/><text x="684.0" y="84.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" fill="#E4E6EB">GROUNDED</text><text x="684.0" y="104.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">cited, or</text><text x="684.0" y="119.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">refused</text></g>
+<path d="M663.0 99.0 L671.0 99.0" stroke="#3FB950" stroke-opacity="0.5" stroke-width="1.6" fill="none"/><path d="M671.0 95.0 l6 4 -6 4z" fill="#3FB950" fill-opacity="0.70"/>
+<circle r="4.5" fill="#3FB950"><animateMotion path="M88 99 H732" dur="7.5s" begin="1.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="7.5s" begin="1.0s" repeatCount="indefinite"/></circle>
+<circle cx="603.5" cy="99.0" r="3" fill="none" stroke="#FFC93C" stroke-width="2"><animate attributeName="r" values="3;24" dur="3.4s" begin="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="3.4s" begin="2.8s" repeatCount="indefinite"/></circle>
+<path d="M604 136 V166 H474 V136" fill="none" stroke="#FFC93C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="5 4"/><path d="M470 142 l4 -6 4 6z" fill="#FFC93C" fill-opacity="0.7"/>
+<circle r="3.4" fill="#FFC93C"><animateMotion path="M604 136 V166 H474 V136" dur="3.4s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="3.4s" begin="3.0s" repeatCount="indefinite"/></circle>
+<text x="539.0" y="184.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#8A7A4A" text-anchor="middle">rejected → retrieve again</text>
+<line x1="28" y1="200" x2="792" y2="200" stroke="#FFC93C" stroke-opacity="0.1"/>
+<text x="28.0" y="222.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">Every stage runs inside the enclave on bundled open weights. No embedding,</text>
+<text x="28.0" y="238.0" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#5F6672">chunk or prompt reaches a model provider, because there is no route to one.</text>
+<rect x="0" y="0" width="120" height="250" fill="url(#swhpl)" pointer-events="none"><animate attributeName="x" values="-120;820" dur="7.5s" repeatCount="indefinite"/></rect>
+<rect x="0.5" y="0.5" width="819" height="249" rx="12" fill="none" stroke="#FFC93C" stroke-opacity="0.16"/></g></svg>
